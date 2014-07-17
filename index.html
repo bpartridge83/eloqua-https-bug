@@ -2,6 +2,24 @@
 <html>
   <head>
     <title>Eloqua HTTPS Bug</title>
+
+    <script type="text/javascript">
+      var _elqQ = _elqQ || [];
+      _elqQ.push(['elqSetSiteId', '815114181']);
+      _elqQ.push(['elqTrackPageView']);
+      _elqQ.push(['elqUseFirstPartyCookie', 'www.twilio.com']);
+
+      (function () {
+        function async_load() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = '//img03.en25.com/i/elqCfg.min.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load);
+      })();
+    </script>
+    
   </head>
   <body>
     This page demonstrates the Eloqua tracking script loading a non-secure resource.
